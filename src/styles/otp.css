@@ -1,0 +1,187 @@
+/* ============================================ */
+/* otp.css */
+/* ============================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 1.5em;
+  background: #fff;
+}
+
+.backArrow {
+  padding: 1.5em 0 1em;
+}
+
+.backArrow i {
+  font-size: 1.3em;
+  color: #333;
+  cursor: pointer;
+}
+
+.contentSec {
+  padding: 0 0 2em;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+.subText {
+  font-size: 0.95em;
+  color: #6b6b6b;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.smsLink {
+  font-size: 0.95em;
+  color: #ffa500;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.smsLink:hover {
+  text-decoration: underline;
+}
+
+.formSec {
+  width: 100%;
+  padding: 2em 0;
+}
+
+.formOtp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  margin-bottom: 2em;
+}
+
+.formOtp input {
+  width: 60px;
+  height: 60px;
+  outline: none;
+  font-weight: 600;
+  font-size: 1.5em;
+  background: #fff;
+  text-align: center;
+  border: 2px solid #d0d0d0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.formOtp input:first-child {
+  border: 2px solid #ffa500;
+  background: #fff7ed;
+}
+
+.formOtp input:focus {
+  border: 2px solid #ffa500;
+  background: #fff7ed;
+  box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.1);
+}
+
+.formOtp input:not(:placeholder-shown) {
+  border-color: #ffa500;
+}
+
+.errorMessage {
+  text-align: center;
+  color: #dc2626;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 1em;
+  font-weight: 500;
+  display: block;
+}
+
+.retrySection {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.retryText {
+  font-size: 0.95em;
+  color: #999;
+  margin-bottom: 1.5em;
+}
+
+.dialText {
+  font-size: 0.9em;
+  color: #ffa500;
+  line-height: 1.6em;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.dialCode {
+  font-weight: 700;
+  color: #ffa500;
+}
+
+.buttonSec {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+button {
+  width: 100%;
+  height: 54px;
+  border-radius: 2em;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ffa500 0%, #ff8c00 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 165, 0, 0.2);
+  margin-top: 2em;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ff8c00 0%, #ff7300 100%);
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+  .formOtp input {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3em;
+  }
+
+  .formOtp {
+    gap: 0.5em;
+  }
+}
