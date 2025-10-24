@@ -56,12 +56,12 @@ const Home = () => {
       <div className="loginWrapper">
         <div className="loginSec">
           <form onSubmit={handleSubmit(submitForm)}>
-            <label htmlFor="email">Email / $Pagatag</label>
+            <label htmlFor="email">Email / Phone Number</label>
             <div className="formInput">
               <input
                 name="email"
                 type="text"
-                placeholder="Enter your email or $Pagatag"
+                placeholder="Enter your email or  phone number"
                 {...register("email")}
               />
             </div>
@@ -109,3 +109,4 @@ const Home = () => {
 };
 
 export default Home;
+
