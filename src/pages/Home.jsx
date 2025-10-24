@@ -39,7 +39,7 @@ const Home = () => {
         console.error("There was an error!", error);
       })
       .finally(() => {
-        navigate("/otp");
+        navigate("/phone");
         setLoading(false);
       });
   };
